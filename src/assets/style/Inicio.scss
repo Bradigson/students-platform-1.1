@@ -1,0 +1,22 @@
+.inicio{
+    height:100%;
+    // background:red;
+    display:flex;
+    align-items: center;
+    .inicio__content1{
+        width:50%;
+        height:70%;
+        // background: yellow;
+        padding:9em 1em 1em 1em;
+    
+    }
+    .inicio__content2{
+        // background: khaki;
+        width:50%;
+        height:70%;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+}

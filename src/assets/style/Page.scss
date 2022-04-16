@@ -1,0 +1,26 @@
+.Page{
+    background: #eee;
+    height:98%;
+    width:100%;
+    border-radius:20px;
+    display: flex;
+    .componentes{
+        // background:red;
+        width:80%;
+        border-radius: 0px 20px 20px 0px;
+
+        .componentes__info{
+            // background: teal;
+            height:90%;
+        }
+    }
+    .signout{
+        background:blue;
+        border-radius: 0px 20px 0px 0px;
+        display:flex;
+        justify-content: flex-end;
+        height:8vh;
+        align-items: center;
+        padding-right:20px;
+    }
+}
