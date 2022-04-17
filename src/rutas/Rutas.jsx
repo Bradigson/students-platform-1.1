@@ -7,9 +7,11 @@ import Practica from "../component/Practicas";
 import Calificacion from "../component/Calificacion";
 import Login from "../component/Login";
 import Signup from "../component/Signup";
+import Error404 from "../component/Error404";
 
-const Rutas = ()=>{
+const Rutas = (props)=>{
 
+  
     return(
         <Routes>
             <Route path='/' element={<Login/>}/>
@@ -21,7 +23,7 @@ const Rutas = ()=>{
                 <Route path='practica' element={<Practica/>}/>
                 <Route path='calificacion' element={<Calificacion/>}/>
             </Route>
-            <Route path='*' element={<h1>Error 404</h1>}/>
+            <Route path='*' element={<Error404/>}/>
         </Routes>
     )
 

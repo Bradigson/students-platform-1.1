@@ -2,7 +2,8 @@ import '../assets/style/Login.scss';
 import loginImg from '../assets/imgs/login-img.svg';
 import { Link } from 'react-router-dom';
 
-const Login = ()=>{
+const Login = (props)=>{
+    
     return(
         <div className="login">
             <div className='loging__form'>
@@ -25,7 +26,7 @@ const Login = ()=>{
                         />
                     </div>
                     <div className='mt-4 text-center'>
-                        <buton className='btn btn-primary'>LOGIN</buton>
+                        <button className='btn btn-primary'>LOGIN</button>
                     </div>
                 </form>
                 <div className='mt-5 text-center'>

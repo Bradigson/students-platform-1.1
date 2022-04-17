@@ -1,8 +1,11 @@
 import '../assets/style/Page.scss';
 import Header from '../component/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Navigate} from 'react-router-dom';
+import {useState} from 'react';
 
 const Page = ()=>{
+
+    const [state, setState] = useState(true);
     return(
         <div className='Page'>
             <Header/>
@@ -12,7 +15,9 @@ const Page = ()=>{
                 </div>
                 <div className='componentes__info'>
                     
-                    <Outlet/>
+                    {
+                        state ? <Outlet/> : <Navigate to='/'/>
+                    }
                 </div>
             </div>
         </div>
