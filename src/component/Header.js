@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import '../assets/style/Header.scss';
 import logo from '../assets/imgs/logo.png';
-
+import user from '../assets/imgs/user.jpg';
 const Header = ()=>{
     return(
         <header className='header'>
@@ -10,10 +10,10 @@ const Header = ()=>{
                     <img src={logo} alt='logo'/>
                 </div>
                 <div className="perfil">
-                    <div>
-                        <img src='' alt="img-perfil"/>
+                    <div className="perfil__img">
+                        <img src={user} alt="img-perfil"/>
                     </div>
-                    <h3>name</h3>
+                    <h3>Jose hernandez</h3>
                     <span>Estudiante de Piano</span>
                 </div>
             </div>

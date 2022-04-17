@@ -1,0 +1,72 @@
+.calificacion{
+    display: flex;
+    // background: yellow;
+    height:100%;
+    .calificacion__card{
+
+        // background: orangered;
+        width:40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card{
+            width:90%;
+            height: 22rem;
+            border-radius: 1rem;
+        }
+
+        .card:hover{
+            animation: 0.7s click 1;
+        }
+        
+        @keyframes click{
+            25%, 75%{
+                -webkit-transform:scale(0.8);
+            }
+            50%{
+                -webkit-transform:scale(1.1);
+            }
+        }
+
+        
+
+        h3{
+            font-size: 100px;
+            font-family: 'Fredoka One', cursive;
+            color:#009ccf;
+            text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+        }
+        i{
+            font-size: 25px;
+            color:#9c9797;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+            
+        }
+        
+        .card-body{
+            h4{
+                color:#009ccf;
+            }
+        }
+        .award-container{
+            display: flex;
+            justify-content: center;
+            .card-award{
+                width:3rem;
+                height:3rem;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+
+        }
+        
+    }
+    .calificacion__img{
+        // background: lightcoral;
+        width:60%;
+        height: 100%;
+    }
+}

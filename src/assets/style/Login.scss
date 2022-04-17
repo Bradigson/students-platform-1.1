@@ -1,0 +1,56 @@
+ .login{
+    //  background:#407BFF;
+     width:100%;
+     display: flex;
+
+     .loging__form{
+         width:50%;
+         padding:10px;
+         form{
+             padding-top:10rem;
+             .btn-primary{
+                 line-height: 3;
+                 width:15rem;
+                 border-radius: 5em;
+                 font-size: 1.2rem;
+                 font-weight: 600;
+                 background:#407BFF;
+                 &:active{
+                     opacity:.7;
+                 }
+             }
+         }
+         input{
+             line-height: 3;
+             border-radius:10rem;
+             padding-left:40px;
+           
+         }
+     }
+
+     .login__img{
+        //  background: yellow;
+         width:50%;
+         filter: drop-shadow(1px 2px 2px rgba(0,0,0,.2));
+         
+     }
+     
+ }
+
+
+
+
+
+//  Sign up
+.signup{
+    @extend .login;
+    // background: red;
+
+    .signup__form{
+        @extend .loging__form;
+    }
+
+    .signup__img{
+        @extend .login__img;
+    }
+}
