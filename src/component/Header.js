@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
 import '../assets/style/Header.scss';
+import '../assets/style/mediaqueries/HeaderResponsive.scss';
 import logo from '../assets/imgs/logo.png';
 import user from '../assets/imgs/user.jpg';
 const Header = (props)=>{
     return(
         <header className='header'>
-            <div>
+            <div className="header__logo-container">
                 <div className='logo'>
                     <img src={logo} alt='logo'/>
                 </div>
@@ -13,8 +14,10 @@ const Header = (props)=>{
                     <div className="perfil__img">
                         <img src={user} alt="img-perfil"/>
                     </div>
-                    <h3>{props.usuarioActive}</h3>
-                    <span>Estudiante de Piano</span>
+                    <div>
+                        <h3>{props.usuarioActive}</h3>
+                        <span>Estudiante de Piano</span>
+                    </div>
                 </div>
             </div>
             <nav className="navbar">

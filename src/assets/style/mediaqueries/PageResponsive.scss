@@ -1,0 +1,14 @@
+@media screen and (max-width:820px){
+    .Page{
+        display: flex;
+        flex-direction: column;
+        // background:yellow;
+
+        .componentes{
+            // background: khaki;
+            // display:none;
+            width:100%;
+            height:75vh;
+        }
+    }
+}

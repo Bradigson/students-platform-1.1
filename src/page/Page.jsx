@@ -1,4 +1,5 @@
 import '../assets/style/Page.scss';
+import '../assets/style/mediaqueries/PageResponsive.scss';
 import Header from '../component/Header';
 import { Outlet, Navigate, useNavigate} from 'react-router-dom';
 import {useState} from 'react';
