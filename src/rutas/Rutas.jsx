@@ -12,11 +12,12 @@ import Error404 from "../component/Error404";
 const Rutas = (props)=>{
 
   
+    
     return(
         <Routes>
             <Route path='/' element={<Login/>}/>
             <Route path='signup' element={<Signup/>}/>
-            <Route path='homepage' element={<Page/>}>
+            <Route path='homepage' element={<Page user={props.user}  usuarioActive={props.usuarioActive}/>}>
                 <Route path='inicio' element={<Inicio/>}/>
                 <Route path='progreso' element={<ProgresoSemal/>}/>
                 <Route path='tarea' element={<Tarea/>}/>

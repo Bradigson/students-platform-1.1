@@ -1,23 +1,44 @@
 import '../assets/style/Page.scss';
 import Header from '../component/Header';
-import { Outlet, Navigate} from 'react-router-dom';
+import { Outlet, Navigate, useNavigate} from 'react-router-dom';
 import {useState} from 'react';
+import app from '../firebase/Credenciales';
+import {getAuth, signOut} from 'firebase/auth';
+const auth = getAuth(app);
 
-const Page = ()=>{
 
-    const [state, setState] = useState(true);
+
+const Page = (props)=>{
+
+    const [state, setState] = useState();
+    const navigate = useNavigate();
+
+    const handleSignout = e=>{
+        
+        try{
+            signOut(auth);
+            navigate('/', {replace : true});
+            localStorage.removeItem('usuario')
+        }catch(err){
+            console.log(err);
+        }
+    }
+
+  
+    console.log(props.usuarioActive)
     return(
         <div className='Page'>
-            <Header/>
+            <Header  usuarioActive={props.usuarioActive}/>
             <div className='componentes'>
                 <div className='signout'>
-                    <button className='btn btn-dark'>Sigh out</button>
+                    <button className='btn btn-dark' onClick={handleSignout}>Sigh out</button>
                 </div>
                 <div className='componentes__info'>
-                    
+
                     {
-                        state ? <Outlet/> : <Navigate to='/'/>
+                        props.user || props.usuarioActive ? <Outlet/> : <Navigate to='/'/>
                     }
+
                 </div>
             </div>
         </div>

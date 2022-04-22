@@ -10,12 +10,21 @@
         align-items: center;
         justify-content: center;
         .card{
+            background:none;
+            border:none;
             width:24rem;
             .card-header{
                 padding:20px;
+                background: none;
+                border:none;
             }
             .card-body{
                 padding:20px;
+                
+            }
+            .card-footer{
+                background: none;
+                border:none;
             }
         }
     }

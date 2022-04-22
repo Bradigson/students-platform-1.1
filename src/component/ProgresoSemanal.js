@@ -167,6 +167,20 @@ const ProgresoSemal = ()=>{
                         <td>6/10</td>
                         <td><i className='bx bx-check' ></i></td>
                     </tr>
+                    <tr>
+                        <td>12/4/22</td>
+                        <td>2/5</td>
+                        <td>4/5</td>
+                        <td>6/10</td>
+                        <td><i className='bx bx-check' ></i></td>
+                    </tr>
+                    <tr>
+                        <td>12/4/22</td>
+                        <td>2/5</td>
+                        <td>4/5</td>
+                        <td>6/10</td>
+                        <td><i className='bx bx-check' ></i></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

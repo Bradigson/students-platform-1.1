@@ -1,21 +1,30 @@
 import './App.css';
-import Page from './page/Page';
 import Rutas from './rutas/Rutas';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
+import app from './firebase/Credenciales';
+import {getAuth, onAuthStateChanged} from 'firebase/auth';
+const auth = getAuth(app);
+
 function App() {
 
-  const [darkMode, setDarkMode] = useState(true)
+  const [user, setUser] = useState('');
+  const [usuarioActivo, setUsuarioActivo] = useState(
+    localStorage.getItem('usuario')
+  );
+  useEffect(()=>{
+    onAuthStateChanged(auth, (usuario)=>{
+      if(usuario){
+        setUser(usuario);
+        localStorage.setItem('usuario', usuario.email)
+      }
+    })
+  },[])
 
-  const handleDarkmode = ()=>{
-    setDarkMode(!darkMode);
-  }
   return (
     <div className="container">
-      <div className='darkmode'>
-        <button onClick={handleDarkmode}><i class={`${ darkMode ? 'bx bxs-moon' 
-        : 'bx bxs-sun'}`} ></i></button>
-      </div>
-      <Rutas/>
+    
+      <Rutas user={user ? user.email : user} usuarioActive={usuarioActivo}/>
+      
     </div>
   );
 }
