@@ -26,7 +26,6 @@ const Page = (props)=>{
     }
 
   
-    console.log(props.usuarioActive)
     return(
         <div className='Page'>
             <Header  usuarioActive={props.usuarioActive}/>

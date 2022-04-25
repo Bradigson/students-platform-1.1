@@ -2,8 +2,8 @@ import '../assets/style/ProgresoSemanal.scss';
 const ProgresoSemal = ()=>{
     return(
         <div>
-            <table class="table table-hover text-center">
-                <thead class="table-header">
+            <table className="table table-hover text-center">
+                <thead className="table-header">
                     <tr>
                         <th>Fecha</th>
                         <th>Puntos Tareas</th>

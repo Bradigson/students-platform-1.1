@@ -54,3 +54,48 @@
         }
     }
 }
+
+
+@media only screen and (max-width:600px){
+    .header{
+        border-radius: 0 0 0 0;
+        height:13vh;
+        .header__logo-container{
+            display:none;
+        }
+
+        .navbar-cointainer{
+            display: none;
+            
+        }
+
+        .menu-boostrap{
+            .navbar-mobile{
+                margin-top:0rem;
+                position: fixed;
+                width:100%;
+                z-index: 99;
+                .container-fluid{
+                    background:#009ccf;
+                    margin-top:-3rem;
+                    .navbar-toggler{
+                        font-size: 2.5rem;
+                        box-shadow: none;
+                        border: none;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:650px){
+    .header{
+        .menu-boostrap{
+            display: none;
+        }
+    }
+}
