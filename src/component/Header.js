@@ -45,8 +45,6 @@ const Header = (props)=>{
 
                                     <div className="collapse navbar-collapse  mt-2" id="navbarSupportedContent">
                                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                                
-
                                                 <li><NavLink to='inicio' className='nav-link nl-1'>Inicio</NavLink></li>
                                                 <li><NavLink to='progreso' className='nav-link nl-2'>Progreso Semanal</NavLink></li>
                                                 <li><NavLink to='tarea' className='nav-link nl-3'>Tareas</NavLink></li>

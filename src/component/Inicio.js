@@ -20,7 +20,7 @@ const Inicio = ()=>{
                     los conocimientos adquiridos en clase, de la misma manera que se les pide ser lo mas 
                     discretos con el contenido de la misma. 
                 </p>
-                <button className='btn btn-primary' onClick={handleTeacher}>Email your teacher</button>
+                <a className='btn btn-primary' href="https://emailbradigson.netlify.app/" target='_BLANK'>Email your teacher</a>
             </div>
             <div className='inicio__content2'>
                 <img src={inicioImg} alt='inicio-img'/>
