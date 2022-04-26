@@ -1,4 +1,6 @@
 import '../assets/style/ProgresoSemanal.scss';
+import '../assets/style/mediaqueries/ProgresoResponsive.scss';
+
 const ProgresoSemal = ()=>{
     return(
         <div>

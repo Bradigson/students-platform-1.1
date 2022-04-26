@@ -2,11 +2,8 @@
     .Page{
         display: flex;
         flex-direction: column;
-        // background:yellow;
 
         .componentes{
-            // background: khaki;
-            // display:none;
             width:100%;
             height:75vh;
         }
@@ -19,6 +16,10 @@
         height:100vh;
         box-shadow: none;
 
+        .componentes{
+            border-radius: 0 0 0 0;
+            margin-top: 6rem;
+        }
       .componentes__info{
           height:100%;
       }
