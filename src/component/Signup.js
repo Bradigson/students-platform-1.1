@@ -7,6 +7,8 @@ import { handleSuccess, handleEmailInput, handlePasswordInput,
         handleEmailInUse, handleInvalidEmail, handleWeekPassword } from '../alerts/alertSignUp';
 import app from '../firebase/Credenciales';
 import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
+import {getFirestore, collection, addDoc} from 'firebase/firestore';
+const dataBase = getFirestore(app);
 const auth = getAuth(app);
 
 
@@ -14,6 +16,11 @@ const Signup = ()=>{
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [user, setUser] = useState('');
+
+    const handleUserName = e=>{
+        setUser(e.target.value);
+    }
     const handleEmail = (e)=>{
         setEmail(e.target.value);
     }
@@ -34,9 +41,13 @@ const Signup = ()=>{
                 handlePasswordInput();
             }else{
             await createUserWithEmailAndPassword(auth, email, password);
+            await addDoc(collection(dataBase, 'students'),{
+                user,email, password
+            })
             handleSuccess();
             setEmail('');
             setPassword('');
+            setUser('');
             
             }
         }catch(err){
@@ -61,6 +72,17 @@ const Signup = ()=>{
             <div className="signup__form">
                 <form onSubmit={handleSubmit}>
                     <h2 className='text-center'>Sign Up</h2>
+                    <div className='mt-4'>
+                        <input
+                        type='text'
+                        placeholder="User Name"
+                        className="form-control"
+                        name='user'
+                        value={user}
+                        onChange={handleUserName}
+                        />
+                    </div>
+
                     <div className='mt-4'>
                         <input
                         type='email'
