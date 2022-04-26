@@ -22,7 +22,7 @@ const Rutas = (props)=>{
                 <Route path='progreso' element={<ProgresoSemal/>}/>
                 <Route path='tarea' element={<Tarea/>}/>
                 <Route path='practica' element={<Practica/>}/>
-                <Route path='calificacion' element={<Calificacion/>}/>
+                <Route path='xxxxxxxx' element={<Calificacion/>}/>
             </Route>
             <Route path='*' element={<Error404/>}/>
         </Routes>

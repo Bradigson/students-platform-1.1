@@ -39,11 +39,19 @@ const handlePasswordEmpty = ()=>{
     })
 }
 
-
+const handleUserBanned = ()=>{
+    Alert.fire({
+        title:'Uuuffff!',
+        text : 'So sorry usuario o email baneado  😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭',
+        icon : 'error',
+        confirmButtonColor: '#d33'
+    })
+}
 
 export{
     handleUserNotFound,
     handleWrongPassword,
     handleEmailEmpty,
-    handlePasswordEmpty
+    handlePasswordEmpty, 
+    handleUserBanned
 }

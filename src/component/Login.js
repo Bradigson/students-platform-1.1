@@ -3,7 +3,7 @@ import loginImg from '../assets/imgs/login-img.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import '../assets/style/mediaqueries/LoginResponsive.scss';
 import { handleUserNotFound, handleWrongPassword,
-        handleEmailEmpty, handlePasswordEmpty } from '../alerts/alertLogIn';
+        handleEmailEmpty, handlePasswordEmpty, handleUserBanned } from '../alerts/alertLogIn';
 import { useState } from 'react';
 import app from '../firebase/Credenciales';
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth';
@@ -50,6 +50,8 @@ const Login = (props)=>{
                 alert('no network')
             }else if(err.code === 'auth/too-many-requests'){
                 alert('has ecedido el limite de intento, esper 5 minutos')
+            }else{
+                handleUserBanned();
             }
         }
 }
