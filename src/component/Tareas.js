@@ -1,4 +1,5 @@
 import '../assets/style/Tarea.scss';
+import '../assets/style/mediaqueries/TareaResponsive.scss';
 import tareaImg from '../assets/imgs/tarea-img.svg';
 const Tarea = ()=>{
     return(

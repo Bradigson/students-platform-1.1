@@ -1,4 +1,5 @@
 import '../assets/style/Inicio.scss';
+import '../assets/style/mediaqueries/InicioResponsive.scss';
 import inicioImg from '../assets/imgs/inicioImg.svg';
 import Alert from 'sweetalert2';
 

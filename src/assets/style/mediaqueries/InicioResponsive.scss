@@ -1,0 +1,14 @@
+@media only screen and (max-width:600px){
+    .inicio{
+        height:100%;
+        
+        .inicio__content1{
+            padding-top: 7rem;
+            width: 100%;
+            height:90%;
+        }
+        .inicio__content2{
+            display: none;
+        }
+    }
+}
