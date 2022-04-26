@@ -18,6 +18,7 @@ const Signup = ()=>{
     const [password, setPassword] = useState('');
     const [user, setUser] = useState('');
 
+    // const User = user.toLowerCase()
     const handleUserName = e=>{
         setUser(e.target.value);
     }
@@ -39,6 +40,8 @@ const Signup = ()=>{
                 handleEmailInput();
             }else if(Password === ''){
                 handlePasswordInput();
+            }else if(user === ''){
+                alert('El campo User no puede estar Vacio');
             }else{
             await createUserWithEmailAndPassword(auth, email, password);
             await addDoc(collection(dataBase, 'students'),{
