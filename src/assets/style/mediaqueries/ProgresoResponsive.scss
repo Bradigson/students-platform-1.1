@@ -1,8 +1,10 @@
-.table{
-    .table-header{
-        tr{
-            th{
-                font-size: 12px;
+@media only screen and (max-width:600px){
+    .table{
+        .table-header{
+            tr{
+                th{
+                    font-size: 12px;
+                }
             }
         }
     }

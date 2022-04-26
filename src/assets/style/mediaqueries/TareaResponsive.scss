@@ -1,16 +1,18 @@
-.tarea{
+@media only screen and (max-width:600px){
+    .tarea{
 
-    .tarea__descripcion{
-        padding:1rem;
-        width:100%;
-        .card{
-            border: 1px solid rgba(0,0,0,.1);
+        .tarea__descripcion{
+            padding:1rem;
+            width:100%;
+            .card{
+                border: 1px solid rgba(0,0,0,.1);
+            }
         }
-    }
-    .tarea__img{
-
-        display: none;
-    }
-
+        .tarea__img{
     
+            display: none;
+        }
+    
+        
+    }
 }
