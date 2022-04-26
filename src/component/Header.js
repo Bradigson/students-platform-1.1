@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, HashRouter } from "react-router-dom";
 import '../assets/style/Header.scss';
 import '../assets/style/mediaqueries/HeaderResponsive.scss';
 import logo from '../assets/imgs/logo.png';
