@@ -21,11 +21,11 @@ const Inicio = ()=>{
                 </p>
                 <a className='btn btn-primary' href="https://emailbradigson.netlify.app/" target='_BLANK'>Email your teacher</a><br/><br/>
 
-                <button type="button" class="btn btn-primary position-relative" onClick={handleNotification}>
+                <button type="button" className="btn btn-primary position-relative" onClick={handleNotification}>
                     Notificación
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         1
-                        <span class="visually-hidden">unread messages</span>
+                        <span className="visually-hidden">unread messages</span>
                     </span>
                 </button>
             </div>

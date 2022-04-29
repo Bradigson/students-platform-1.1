@@ -3,6 +3,7 @@ import {useState} from 'react';
 import Alert from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import '../assets/style/IntervalExam.scss';
+import '../assets/style/mediaqueries/IntervalosExamResponsicve.scss';
 import quiz from '../assets/imgs/quizas.png';
 import { opciones } from './Preguntas';
 import app from '../firebase/Credenciales';
