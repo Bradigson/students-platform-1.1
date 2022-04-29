@@ -39,6 +39,7 @@ const Page = (props)=>{
                         props.user || props.usuarioActive ? <Outlet/> : <Navigate to='/'/>
                     }
 
+                  
                 </div>
             </div>
         </div>

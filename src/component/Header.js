@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import '../assets/style/Header.scss';
 import '../assets/style/mediaqueries/HeaderResponsive.scss';
 import logo from '../assets/imgs/logo.png';
-import user from '../assets/imgs/user.jpg';
+import user from '../assets/imgs/user.png';
 const Header = (props)=>{
     return(
         <header className='header'>

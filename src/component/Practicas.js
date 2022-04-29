@@ -1,12 +1,15 @@
 import '../assets/style/Practica.scss';
+import { useNavigate, Navigate, Link } from 'react-router-dom';
+
 const Practica = ()=>{
+  
     return(
         <div className='practica'>
             <div className='practica__info'>
                 <h2>Practicas</h2>
-                <p className='text-muted'>Para saber cuando cundo debe de tomar una de las practi, 
-                    espere a que la flechita se acti, 
-                    la misma cambiara de color y se estara moviendo, lo que indicara que la practica esta lista.<br/>
+                <p className='text-muted'>Para saber  cundo debe de tomar una de las practicas, 
+                    espere a que la flechita se active, 
+                    la misma cambiara de color y se estaría moviendo lo que indicara que la practica esta lista.<br/>
                     <span>Good Lock!</span>
                 </p>
             </div>
@@ -14,10 +17,10 @@ const Practica = ()=>{
                 <div className="alert alert-primary" role="alert">
                    <div>
                         <h3>Intervalos</h3> 
-                        <a href="#" className="alert-link">take it</a>
+                        <Link to='/homepage/interval-exam'  className="alert-link">take it</Link>
                    </div>
                    <div>
-                     <i className='bx bx-chevron-right'></i>
+                     <i className='bx bx-chevron-right intervalos'></i>
                    </div>
                 </div>
 
