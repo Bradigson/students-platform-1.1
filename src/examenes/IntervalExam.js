@@ -128,130 +128,130 @@ const IntervalosExam = ()=>{
                 <form onSubmit={handleSubmit}>
                     <div className="exam__opciones" >
                         <h2>{preguntas.q1}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q1'value='a' onChange={handleQuestion}/>{opciones[0].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q1'value='b' onChange={handleQuestion}/>{opciones[0].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q1'value='c' onChange={handleQuestion}/>{opciones[0].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q1'value='a' onChange={handleQuestion}/>A. {opciones[0].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q1'value='b' onChange={handleQuestion}/>B. {opciones[0].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q1'value='c' onChange={handleQuestion}/>C. {opciones[0].C}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q2}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='a' onChange={handleQuestion}/>{opciones[1].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='b' onChange={handleQuestion}/>{opciones[1].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='c' onChange={handleQuestion}/>{opciones[1].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='d' onChange={handleQuestion}/>{opciones[1].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='a' onChange={handleQuestion}/>A. {opciones[1].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='b' onChange={handleQuestion}/>B. {opciones[1].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='c' onChange={handleQuestion}/>C. {opciones[1].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q2'value='d' onChange={handleQuestion}/>D. {opciones[1].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q3}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='a' onChange={handleQuestion}/>{opciones[2].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='b' onChange={handleQuestion}/>{opciones[2].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='c' onChange={handleQuestion}/>{opciones[2].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='d' onChange={handleQuestion}/>{opciones[2].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='a' onChange={handleQuestion}/>A. {opciones[2].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='b' onChange={handleQuestion}/>B. {opciones[2].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='c' onChange={handleQuestion}/>C. {opciones[2].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q3'value='d' onChange={handleQuestion}/>D. {opciones[2].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q4}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='a' onChange={handleQuestion}/>{opciones[3].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='b' onChange={handleQuestion}/>{opciones[3].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='c' onChange={handleQuestion}/>{opciones[3].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='a' onChange={handleQuestion}/>A. {opciones[3].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='b' onChange={handleQuestion}/>B. {opciones[3].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='c' onChange={handleQuestion}/>C. {opciones[3].C}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q5}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='a' onChange={handleQuestion}/>{opciones[4].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='b' onChange={handleQuestion}/>{opciones[4].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='c' onChange={handleQuestion}/>{opciones[4].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='d' onChange={handleQuestion}/>{opciones[4].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='a' onChange={handleQuestion}/>A. {opciones[4].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='b' onChange={handleQuestion}/>B. {opciones[4].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='c' onChange={handleQuestion}/>C. {opciones[4].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q5'value='d' onChange={handleQuestion}/>D. {opciones[4].D}</p>
                     </div>
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q6}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='a' onChange={handleQuestion}/>{opciones[5].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='b' onChange={handleQuestion}/>{opciones[5].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='c' onChange={handleQuestion}/>{opciones[5].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='d' onChange={handleQuestion}/>{opciones[5].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='a' onChange={handleQuestion}/>A. {opciones[5].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='b' onChange={handleQuestion}/>B. {opciones[5].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='c' onChange={handleQuestion}/>C. {opciones[5].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q6'value='d' onChange={handleQuestion}/>D. {opciones[5].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q7}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='a' onChange={handleQuestion}/>{opciones[6].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='b' onChange={handleQuestion}/>{opciones[6].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='c' onChange={handleQuestion}/>{opciones[6].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='d' onChange={handleQuestion}/>{opciones[6].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='a' onChange={handleQuestion}/>A. {opciones[6].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='b' onChange={handleQuestion}/>B. {opciones[6].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='c' onChange={handleQuestion}/>C. {opciones[6].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q7'value='d' onChange={handleQuestion}/>D. {opciones[6].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q8}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q8'value='a' onChange={handleQuestion}/>{opciones[7].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q8'value='b' onChange={handleQuestion}/>{opciones[7].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q8'value='a' onChange={handleQuestion}/>A. {opciones[7].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q8'value='b' onChange={handleQuestion}/>B. {opciones[7].B}</p>
                         
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q9}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q9'value='a' onChange={handleQuestion}/>{opciones[8].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q9'value='b' onChange={handleQuestion}/>{opciones[8].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q9'value='a' onChange={handleQuestion}/>A. {opciones[8].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q9'value='b' onChange={handleQuestion}/>B. {opciones[8].B}</p>
                       
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q10}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='a' onChange={handleQuestion}/>{opciones[9].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='b' onChange={handleQuestion}/>{opciones[9].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='c' onChange={handleQuestion}/>{opciones[9].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='d' onChange={handleQuestion}/>{opciones[9].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='a' onChange={handleQuestion}/>A. {opciones[9].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='b' onChange={handleQuestion}/>B. {opciones[9].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='c' onChange={handleQuestion}/>C. {opciones[9].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q10'value='d' onChange={handleQuestion}/>D. {opciones[9].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q11}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='a' onChange={handleQuestion}/>{opciones[10].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='b' onChange={handleQuestion}/>{opciones[10].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='c' onChange={handleQuestion}/>{opciones[10].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='d' onChange={handleQuestion}/>{opciones[10].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='a' onChange={handleQuestion}/>A. {opciones[10].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='b' onChange={handleQuestion}/>B. {opciones[10].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='c' onChange={handleQuestion}/>C. {opciones[10].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q11'value='d' onChange={handleQuestion}/>D. {opciones[10].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q12}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='a' onChange={handleQuestion}/>{opciones[11].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='b' onChange={handleQuestion}/>{opciones[11].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='c' onChange={handleQuestion}/>{opciones[11].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='d' onChange={handleQuestion}/>{opciones[11].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='a' onChange={handleQuestion}/>A. {opciones[11].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='b' onChange={handleQuestion}/>B. {opciones[11].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='c' onChange={handleQuestion}/>C. {opciones[11].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q12'value='d' onChange={handleQuestion}/>D. {opciones[11].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q13}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='a' onChange={handleQuestion}/>{opciones[12].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='b' onChange={handleQuestion}/>{opciones[12].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='c' onChange={handleQuestion}/>{opciones[12].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='d' onChange={handleQuestion}/>{opciones[12].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='a' onChange={handleQuestion}/>A. {opciones[12].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='b' onChange={handleQuestion}/>B. {opciones[12].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='c' onChange={handleQuestion}/>C. {opciones[12].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q13'value='d' onChange={handleQuestion}/>D. {opciones[12].D}</p>
                     </div>
 
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q14}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='a' onChange={handleQuestion}/>{opciones[13].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='b' onChange={handleQuestion}/>{opciones[13].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='c' onChange={handleQuestion}/>{opciones[13].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='d' onChange={handleQuestion}/>{opciones[13].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='a' onChange={handleQuestion}/>A. {opciones[13].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='b' onChange={handleQuestion}/>B. {opciones[13].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='c' onChange={handleQuestion}/>C. {opciones[13].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q14'value='d' onChange={handleQuestion}/>D. {opciones[13].D}</p>
                     </div>
 
                     <div className="exam__opciones" >
                         <h2>{preguntas.q15}</h2>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='a' onChange={handleQuestion}/>{opciones[14].A}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='b' onChange={handleQuestion}/>{opciones[14].B}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='c' onChange={handleQuestion}/>{opciones[14].C}</p>
-                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='d' onChange={handleQuestion}/>{opciones[14].D}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='a' onChange={handleQuestion}/>A. {opciones[14].A}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='b' onChange={handleQuestion}/>B. {opciones[14].B}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='c' onChange={handleQuestion}/>C. {opciones[14].C}</p>
+                        <p className='form-check'><input type='radio' className='form-check-input' name='q15'value='d' onChange={handleQuestion}/>D. {opciones[14].D}</p>
                     </div>
                     <div className=' ps-4'>
                         <button className='btn btn-primary'>Terminar y enviar</button>
