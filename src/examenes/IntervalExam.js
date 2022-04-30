@@ -31,6 +31,9 @@ const IntervalosExam = ()=>{
     const handleSubmit = (e)=>{
         e.preventDefault();
         let acumulado = 0;
+        const data = new Date();
+        let month = data.getMonth() + 1;
+        let fecha = data.getDate() +'/'+ month + '/' + data.getFullYear() +' '+ new Date().toLocaleTimeString();
 
         if(questions.q1 === 'a'){
             acumulado ++;
@@ -108,7 +111,7 @@ const IntervalosExam = ()=>{
                   timer : '1050'
               });
                addDoc(collection(dataBase, 'examintervalo'),{
-                student, acumulado
+                fecha, student, acumulado
             });
                 navigate('/homepage/practica')
             } else if (result.isDenied) {
