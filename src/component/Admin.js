@@ -56,9 +56,9 @@ const Admin = ()=>{
                             <div className='card ' key={info.id}>
                                 <div className='card-body'>
                                     <h2>{info.user}</h2>
-                                    <p>{info.email}</p>
-                                    <p>{info.id}</p>
-                                    <p>{info.password}</p>
+                                    <p><b>Email:</b>{' '}{info.email}</p>
+                                    <p><b>Id:</b>{' '}{info.id}    </p>
+                                    <p><b>Password:</b>{' '}{info.password}</p>
                                 </div>
                                 <div className='card-footer text-center'>
                                     <button className='btn btn-warning' onClick={handleUpdate}>Update</button>{' '}
