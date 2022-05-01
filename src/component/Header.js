@@ -1,9 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import '../assets/style/Header.scss';
 import '../assets/style/mediaqueries/HeaderResponsive.scss';
 import logo from '../assets/imgs/logo.png';
 import user from '../assets/imgs/user.png';
+import { useState } from "react";
+
 const Header = (props)=>{
+    const [admin, setAdmin] = useState(
+        localStorage.getItem('usuario')
+    )
+
     return(
         <header className='header'>
             <div className="header__logo-container">
@@ -28,6 +34,11 @@ const Header = (props)=>{
                         <li><i className='bx bxs-edit-alt' ></i><NavLink to='tarea' className='nav-link nl-3'>Tareas</NavLink></li>
                         <li><i className='bx bxs-edit' ></i><NavLink to='practica' className='nav-link nl-4'>Practicas</NavLink></li>
                         <li><i className='bx bx-task' ></i><NavLink to='calificacion' className='nav-link nl-5'>Calificaciones</NavLink></li>
+                        {
+                            admin === 'bradigson@hotmail.com' ? <li><i className='' ></i>
+                            <Link to='/homepage/admin' className='text-dark nl-5'>Admin</Link></li>
+                            : ''
+                        }
                     </ul>
                 </nav>
             </div>

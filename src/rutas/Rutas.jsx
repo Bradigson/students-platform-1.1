@@ -8,6 +8,7 @@ import Calificacion from "../component/Calificacion";
 import Login from "../component/Login";
 import Signup from "../component/Signup";
 import IntervalosExam from "../examenes/IntervalExam";
+import Admin from "../component/Admin";
 import Error404 from "../component/Error404";
 
 const Rutas = (props)=>{
@@ -25,8 +26,8 @@ const Rutas = (props)=>{
                 <Route path='practica' element={<Practica/>}/>
                 <Route path='calificacion' element={<Calificacion/>}/>
                 <Route path='interval-exam' element={<IntervalosExam/>}/>
+                <Route path='admin' element={<Admin/>}/>
             </Route>
-            {/* <Route path='interval-exam' element={<IntervalosExam/>}/> */}
             <Route path='*' element={<Error404/>}/>
         </Routes>
     )
