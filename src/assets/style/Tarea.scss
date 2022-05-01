@@ -9,6 +9,7 @@
         display:flex;
         align-items: center;
         justify-content: center;
+        
         .card{
             background:none;
             border:none;
@@ -17,7 +18,17 @@
                 padding:20px;
                 background: none;
                 border:none;
+                .gana{
+                    font-size: 1.9rem;
+                    animation: gana 1s infinite;
+                   transition:  all 1s;
+
+                }
+                
+
+              
             }
+            
             .card-body{
                 padding:20px;
                 
@@ -32,11 +43,11 @@
 
     /*SOMBRA MOVIL*/
      /*Efecto de sombra con caja que sube y baja*/
-    .card:hover{
-        transform: translateY(-6px);
-        transition-duration: 0.3s;
-        animation: 1.5s mover-caja infinite;
-    }
+     .card:hover{
+         transform: translateY(-6px);
+         transition-duration: 0.3s;
+         animation: 1.5s mover-caja infinite;
+     }
     .card:before{
         content: '';
         background: radial-gradient(ellipse, 

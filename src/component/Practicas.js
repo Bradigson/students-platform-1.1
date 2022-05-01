@@ -10,16 +10,17 @@ const Practica = ()=>{
                 <p className='text-muted'>Para saber  cundo debe de tomar una de las practicas, 
                     espere a que la flechita se active, 
                     la misma cambiara de color y se estaría moviendo lo que indicara que la practica esta lista.<br/>
-                    <span>Good Lock!</span>
+                    <span>Good Lock! 😎</span>
                 </p>
             </div>
             <div className='practica__aceso'>
                 <div className="alert alert-primary" role="alert">
                    <div>
-                        <h3>Intervalos</h3> 
+                        <h3>Intervalos</h3> <span>😨</span>{' '}
                         <Link to='/homepage/interval-exam'  className="alert-link">take it</Link>
                    </div>
                    <div>
+                     
                      <i className='bx bx-chevron-right intervalos'></i>
                    </div>
                 </div>
