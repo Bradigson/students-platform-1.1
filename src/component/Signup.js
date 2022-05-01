@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { handleSuccess, handleEmailInput, handlePasswordInput,
         handleEmailInUse, handleInvalidEmail, handleWeekPassword } from '../alerts/alertSignUp';
+
 import app from '../firebase/Credenciales';
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
-import {getFirestore, collection, addDoc} from 'firebase/firestore';
+import {getAuth, createUserWithEmailAndPassword, signInWithEamilAndPassword} from 'firebase/auth';
+import {getFirestore, addDoc, collection, deleteDoc, getDocs, doc, getDoc, setDoc} from 'firebase/firestore';
 const dataBase = getFirestore(app);
 const auth = getAuth(app);
 
@@ -44,8 +45,9 @@ const Signup = ()=>{
                 alert('El campo User no puede estar Vacio');
             }else{
             await createUserWithEmailAndPassword(auth, email, password);
+            
             await addDoc(collection(dataBase, 'students'),{
-                user,email, password
+                email, user, password
             })
             handleSuccess();
             setEmail('');

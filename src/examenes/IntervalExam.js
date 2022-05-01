@@ -6,11 +6,10 @@ import '../assets/style/IntervalExam.scss';
 import '../assets/style/mediaqueries/IntervalosExamResponsicve.scss';
 import quiz from '../assets/imgs/quizas.png';
 import { opciones } from './Preguntas';
+
 import app from '../firebase/Credenciales';
-import {getFirestore, collection, addDoc, getDocs, doc, setDoc, getDoc} from 'firebase/firestore';
+import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore';
 const dataBase = getFirestore(app);
-
-
 const IntervalosExam = ()=>{
 
     
@@ -33,7 +32,8 @@ const IntervalosExam = ()=>{
         let acumulado = 0;
         const data = new Date();
         let month = data.getMonth() + 1;
-        let fecha = data.getDate() +'/'+ month + '/' + data.getFullYear() +' '+ new Date().toLocaleTimeString();
+        const hora = new Date().toLocaleTimeString();
+        let fecha = data.getDate() +'/'+ month + '/' + data.getFullYear();
 
         if(questions.q1 === 'a'){
             acumulado ++;
@@ -110,9 +110,10 @@ const IntervalosExam = ()=>{
                   showConfirmButton : false,
                   timer : '1050'
               });
-               addDoc(collection(dataBase, 'examintervalo'),{
-                fecha, student, acumulado
-            });
+            
+            addDoc(collection(dataBase, 'examintervalo'),{
+                fecha, student, acumulado, hora
+            })
                 navigate('/homepage/practica')
             } else if (result.isDenied) {
               Alert.fire('Respuestas no enviadas', '', 'info')
