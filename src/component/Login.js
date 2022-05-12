@@ -87,7 +87,7 @@ const Login = (props)=>{
                 </form>
                 <div className='mt-5 text-center'>
                     <span>Don't you have an accnout?</span>{' '}
-                    <Link to='signup'>Sign up</Link>   
+                    <Link to='****'>Sign up</Link>   
                 </div>
             </div>
             <div className='login__img'>
