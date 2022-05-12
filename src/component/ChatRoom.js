@@ -1,8 +1,8 @@
 import '../assets/style/ChatRoom.scss';
 import { useState, useEffect } from 'react';
-import app from '../firebase/Credenciales';
+import chat from '../firebase/CredencalesChat';
 import {getFirestore, collection, addDoc, getDocs, doc, deleteDoc, setDoc, getDoc, orderBy} from 'firebase/firestore';
-const dataBase = getFirestore(app);
+const dataBase = getFirestore();
 
 const ChatRoom = ()=>{
 
@@ -61,27 +61,7 @@ const ChatRoom = ()=>{
 
     console.log(getMessage)
 
-    // get use name
-    // const [userName, setUserName] = useState([]);
-    // useEffect(()=>{
-    //     const getUserName = async()=>{
-    //         try{
-    //             const queryUserName = await getDocs(collection(dataBase, 'students'));
-    //             const docs = [];
-    //             queryUserName.forEach((doc)=>{
-    //                 docs.push({...doc.data(), id:doc.id});
-    //                 setUserName(docs);
-    //             })
-
-    //         }catch(err){
-
-    //         }
-    //     }
-    //     getUserName();
-    // },[]);
     
-    // const usersName = userName.map(data=>data.user)
-    // console.log(usersName[1])
    
     return(
         <div className='chat-room'>

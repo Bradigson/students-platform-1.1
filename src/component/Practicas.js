@@ -16,8 +16,8 @@ const Practica = ()=>{
             <div className='practica__aceso'>
                 <div className="alert alert-primary" role="alert">
                    <div>
-                        <h3>Intervalos</h3> <span>😨</span>{' '}
-                        <Link to='/homepage/interval-exam'  className="alert-link">take it</Link>
+                        {/* <h3>Intervalos</h3> <span>😨</span>{' '} */}
+                        <Link to='/homepage/interval-exam*'  className="alert-link">take it</Link>
                    </div>
                    <div>
                      

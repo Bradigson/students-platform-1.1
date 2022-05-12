@@ -7,7 +7,7 @@ import { handleNoificacion } from '../alerts/Notificacion';
 const Inicio = ()=>{
 
     const handleNotification = ()=>{
-        handleNoificacion();
+        // handleNoificacion();
     }
  
     return(
@@ -21,12 +21,12 @@ const Inicio = ()=>{
                 </p>
                 <a className='btn btn-primary' href="https://emailbradigson.netlify.app/" target='_BLANK'>Email your teacher</a><br/><br/>
 
-                <button type="button" className="btn btn-primary position-relative" onClick={handleNotification}>
+                <button type="button" className="btn btn-primary position-relative" onClick={handleNotification} data-bs-toggle="tooltip" title="no hay Notificación" >
                     Notificación 😱
-                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {/* <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         1
                         <span className="visually-hidden">unread messages</span>
-                    </span>
+                    </span> */}
                 </button>
             </div>
             <div className='inicio__content2'>
